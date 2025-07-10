@@ -1,8 +1,5 @@
 const express = require("express");
-const {
-  createRelation,
-  deleteRelation,
-} = require("../controllers/relationController");
+const { createRelation, deleteRelation } = require("./Controller");
 const { authenticateToken } = require("../middleware/authMiddleware");
 const { prepareRelation } = require("../middleware/relationMiddleware");
 

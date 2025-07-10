@@ -1,7 +1,7 @@
 const asyncHandler = require("express-async-handler");
-const Relation = require("../models/relationModel");
-const Character = require("../models/characterModel");
-const Plotpoint = require("../models/plotpointModel");
+const Relation = require("../relation/Model");
+const Character = require("../character/Model");
+const Plotpoint = require("../plotpoint/Model");
 const { truncateRelationType } = require("./helperFunctions");
 
 const prepareRelation = asyncHandler(async (req, res, next) => {

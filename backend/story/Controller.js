@@ -1,10 +1,10 @@
 const asyncHandler = require("express-async-handler");
 const { setUpCharacterList } = require("../middleware/helperFunctions");
-const Story = require("../models/storyModel");
-const Plotpoint = require("../models/plotpointModel");
-const Relation = require("../models/relationModel");
-const { addImage, deleteImage } = require("./imageController");
-const imageModel = require("../models/imageModel");
+const Story = require("./Model");
+const Plotpoint = require("../plotpoint/Model");
+const Relation = require("../relation/Model");
+const { addImage, deleteImage } = require("../image/Controller");
+const imageModel = require("../image/Model");
 //@desc create new story
 //@route POST /api/story
 //@access private

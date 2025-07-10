@@ -4,8 +4,8 @@ const {
   viewPlotpoint,
   modifyPlotpoint,
   deletePlotpoint,
-} = require("../controllers/plotpointController");
-const { viewRelations } = require("../controllers/relationController");
+} = require("./Controller");
+const { viewRelations } = require("../relation/Controller");
 const router = express.Router();
 
 //create

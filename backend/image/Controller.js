@@ -1,8 +1,8 @@
 const asyncHandler = require("express-async-handler");
-const Image = require("../models/imageModel");
-const User = require("../models/userModel");
-const Story = require("../models/storyModel");
-const Character = require("../models/characterModel");
+const Image = require("./Model");
+const User = require("../user/Model");
+const Story = require("../story/Model");
+const Character = require("../character/Model");
 
 const addImage = asyncHandler(async (imgUrl) => {
   if (!imgUrl) {

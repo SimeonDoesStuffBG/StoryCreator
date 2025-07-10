@@ -1,7 +1,7 @@
 const asyncHandler = require("express-async-handler");
-const Character = require("../models/characterModel");
-const imageModel = require("../models/imageModel");
-const { addImage, deleteImage } = require("./imageController");
+const Character = require("./Model");
+const imageModel = require("../image/Model");
+const { addImage, deleteImage } = require("../image/Controller");
 
 //@desc create new Character
 //@route POST /api/characters

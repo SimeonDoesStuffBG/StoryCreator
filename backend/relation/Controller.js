@@ -1,8 +1,8 @@
 const asyncHandler = require("express-async-handler");
 const { truncateRelationType } = require("../middleware/helperFunctions");
-const Relation = require("../models/relationModel");
-const Character = require("../models/characterModel");
-const Plotpoint = require("../models/plotpointModel");
+const Relation = require("./Model");
+const Character = require("../character/Model");
+const Plotpoint = require("../plotpoint/Model");
 
 //@desc create new Relation
 //@route POST /api/relations

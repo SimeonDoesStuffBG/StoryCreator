@@ -6,9 +6,9 @@ const {
   checkUser,
   checkMe,
   checkUsers,
-} = require("../controllers/userController");
-const { viewCharacters } = require("../controllers/characterController");
-const { viewStories } = require("../controllers/storyController");
+} = require("./Controller");
+const { viewCharacters } = require("../character/Controller");
+const { viewStories } = require("../story/Controller");
 
 const router = express.Router();
 

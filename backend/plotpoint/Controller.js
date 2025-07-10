@@ -1,7 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const { setUpCharacterList } = require("../middleware/helperFunctions");
-const Plotpoint = require("../models/plotpointModel");
-const Relation = require("../models/relationModel");
+const Plotpoint = require("./Model");
+const Relation = require("../relation/Model");
 
 //@desc creates new plotpoit
 //@route POST api/stories/:storyId/plotpoints

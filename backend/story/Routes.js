@@ -5,13 +5,10 @@ const {
   viewStory,
   modifyStory,
   deleteStory,
-} = require("../controllers/storyController");
-const {
-  createPlotpoint,
-  viewPlotpoints,
-} = require("../controllers/plotpointController");
+} = require("./Controller");
+const { createPlotpoint, viewPlotpoints } = require("../plotpoint/Controller");
 const { authenticateToken } = require("../middleware/authMiddleware");
-const { viewRelations } = require("../controllers/relationController");
+const { viewRelations } = require("../relation/Controller");
 
 const router = express.Router();
 

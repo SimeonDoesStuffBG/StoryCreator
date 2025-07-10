@@ -5,8 +5,8 @@ const {
   viewCharacter,
   modifyCharacter,
   deleteCharacter,
-} = require("../controllers/characterController");
-const { viewRelations } = require("../controllers/relationController");
+} = require("./Controller");
+const { viewRelations } = require("../relation/Controller");
 const { authenticateToken } = require("../middleware/authMiddleware");
 
 const router = express.Router();

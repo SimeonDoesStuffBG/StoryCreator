@@ -1,9 +1,9 @@
 const bcrypt = require("bcryptjs");
 const asyncHandler = require("express-async-handler");
-const User = require("../models/userModel");
+const User = require("./Model");
 const { generateToken } = require("../middleware/authMiddleware");
-const { addImage } = require("./imageController");
-const imageModel = require("../models/imageModel");
+const { addImage } = require("../image/Controller");
+const imageModel = require("../image/Model");
 
 //@desc create new user
 //@route POST api/users
