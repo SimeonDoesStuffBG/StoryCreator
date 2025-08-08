@@ -18,11 +18,11 @@ body {
 
 .charthumbnail{
   background-color: azure;
+  width: 330px;
   margin: 5px;
   padding: 3px;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
 
   img.picture{
     border: 2px solid black;
@@ -59,3 +59,35 @@ body {
   }
 }
 
+.storythumbnail{
+  width:330px;
+  background-color: lavenderblush;
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+
+  img{
+    width: 320px;
+    height: 180px;
+  }
+
+  .title{
+    font-size: large;
+    color: black;
+  }
+
+  .creator{
+    font-size: medium;
+    color: gray;
+  }
+}
+
+.storythumbnail:hover{
+  background-color: pink;
+  border: 2px solid palevioletred;
+
+  .title, .creator{
+    text-decoration: underline;
+  }
+}
