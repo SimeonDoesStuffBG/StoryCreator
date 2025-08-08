@@ -1,7 +1,6 @@
-import StoryThumbnail from "~/components/storyThumbnail";
-import CharacterThumbnail from "~/components/characterThumbnail";
 import type { Route } from "../+types/root";
 import CharactersList from "~/components/charactersList";
+import StoriesList from "~/components/storiesList";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -11,7 +10,9 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Main() {
   return <>
+  <div className="lists">
     <CharactersList/>
-    <StoryThumbnail title="The Martian" creator="Andy Weir"/>
+    <StoriesList/>
+  </div>
   </>;
 }

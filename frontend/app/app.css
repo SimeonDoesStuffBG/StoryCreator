@@ -48,6 +48,7 @@ body {
 .charthumbnail:hover{
   background-color: lightskyblue;
   border: 2px solid lightseagreen;
+  margin: 3px;
 
   img.picture{
     width: 110;
@@ -86,13 +87,17 @@ body {
 .storythumbnail:hover{
   background-color: pink;
   border: 2px solid palevioletred;
-
+  margin: 3px;
   .title, .creator{
     text-decoration: underline;
   }
 }
 
-.characters{
+.lists{
+  display: flex;
+}
+
+.characters, .stories{
   flex: 1;
   height: 100vh;
   overflow: scroll;
