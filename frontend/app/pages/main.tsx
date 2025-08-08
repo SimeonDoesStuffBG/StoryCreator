@@ -1,6 +1,7 @@
 import type { Route } from "../+types/root";
 import CharactersList from "~/components/charactersList";
 import StoriesList from "~/components/storiesList";
+import { characters, stories } from "~/placeholders";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -11,8 +12,8 @@ export function meta({}: Route.MetaArgs) {
 export default function Main() {
   return <>
   <div className="lists">
-    <CharactersList/>
-    <StoriesList/>
+    <CharactersList characters={characters}/>
+    <StoriesList stories={stories}/>
   </div>
   </>;
 }

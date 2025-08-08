@@ -1,8 +1,8 @@
 import React from "react";
 import StoryThumbnail from "./storyThumbnail";
 
-export default function StoriesList(){
+export default function StoriesList({stories}:{stories:Story[]}){
     return <div className="stories">
-        <StoryThumbnail title="The Martian" creator="Andy Weir"/>
+        {stories.map(story=><StoryThumbnail title={story.title} creator={story.creator}/>)}
     </div>
 }

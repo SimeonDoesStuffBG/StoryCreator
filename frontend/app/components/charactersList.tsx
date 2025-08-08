@@ -1,25 +1,8 @@
 import React from "react"
 import CharacterThumbnail from "./characterThumbnail"
 
-export default function CharactersList(){
+export default function CharactersList({characters}:{characters:Character[]}){
     return <div className="characters">
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
-            <CharacterThumbnail name="Mark Watney" creator="Andy Weir"/>
+        {characters.map(character=><CharacterThumbnail name={character.name} creator={character.creator}/>)}
      </div>
 }

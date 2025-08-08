@@ -1,4 +1,4 @@
-interface character {
+interface Character {
     name: string;
     creator: string;
 }
