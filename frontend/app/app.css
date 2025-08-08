@@ -14,21 +14,48 @@ body {
   }
 }
 
-img.character{
-  border: 2px solid black;
-  background-color: #00bfbf;
-  width: 150px;
-  height: 150px;
-  
-}
 
-a.active{
-  background-color: blueviolet;
-}
+
 .charthumbnail{
-  background-color: red;
+  background-color: azure;
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  img.picture{
+    border: 2px solid black;
+    margin-right: 4px;
+    background-color: #00bfbf;
+    width: 120px;
+    height: 120px;
+    order: 1;
+  }
+
+  .info{
+    order: 2;
+    h1{
+      font-size: large;
+      color: black;
+    }
+    h3{
+      font-size: medium;
+      color: gray;
+    }
+  }
 }
 .charthumbnail:hover{
-  border: 1px solid black;
+  background-color: lightskyblue;
+  border: 2px solid lightseagreen;
+
+  img.picture{
+    width: 110;
+    height: 110;
+  }
+
+  .info *{
+    text-decoration: underline;
+  }
 }
 
