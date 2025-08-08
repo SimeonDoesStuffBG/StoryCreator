@@ -91,3 +91,12 @@ body {
     text-decoration: underline;
   }
 }
+
+.characters{
+  flex: 1;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
