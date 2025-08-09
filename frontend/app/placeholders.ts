@@ -4,7 +4,7 @@ export const characters:Character[] = [
     {name:"Leto Atreides The Second The Second", creator:"Frank Herbert"}, 
     {name:"Mr. Cavor", creator:"H.G. Wells"},
     {name:"Viktor Frankenstein", creator:"Mery Shelly"}, 
-    {name:"Fillias Fogg", creator:"Jules Vern"},
+    {name:"Phileas Fogg", creator:"Jules Vern"},
 ]
 
 export const stories:Story[] = [

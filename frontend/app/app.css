@@ -95,14 +95,24 @@ body {
 
 .lists{
   display: flex;
-}
 
-.characters, .stories{
+  .characters, .stories{
   flex: 1;
   height: 100vh;
   overflow: scroll;
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  
+  input {
+    position: sticky;
+    top: 0;
+    flex-basis: 100%;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: white;
+  }
 }
+}
+
