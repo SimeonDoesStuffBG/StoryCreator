@@ -1,4 +1,5 @@
 interface Story{
-    title:string,
+    id: number;
+    title:string;
     creator:string;
 }

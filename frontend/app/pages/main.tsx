@@ -4,6 +4,7 @@ import CharactersList from "~/components/charactersList";
 import Checkbox from "~/components/checkbox";
 import StoriesList from "~/components/storiesList";
 import { characters, stories } from "~/placeholders";
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Dashboard" },
@@ -16,8 +17,8 @@ export default function Main() {
   const [showCharacters, setShowCharacters]=useState(true);
   const [showStories, setShowStories]=useState(true);
   return <>
-  <Checkbox name="Characters" id="chars" label="Characters" checked={showCharacters} enabled={showStories} onCheck={e=>setShowCharacters(!showCharacters)}/>
-  <Checkbox name="Stories" id="stories" label="Stories" checked={showStories} enabled={showCharacters} onCheck={e=>{console.log(showStories);setShowStories(!showStories)}}/>
+  <Checkbox name="Characters" checked={showCharacters} enabled={showStories} onCheck={e=>setShowCharacters(!showCharacters)}/>
+  <Checkbox name="Stories" checked={showStories} enabled={showCharacters} onCheck={e=>{console.log(showStories);setShowStories(!showStories)}}/>
   <div className="lists">
     {showCharacters&&<CharactersList characters={characters}/>}
     {showStories&&<StoriesList stories={stories}/>}

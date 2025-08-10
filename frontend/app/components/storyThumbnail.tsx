@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 
-export default function StoryThumbnail({title, creator}:Story){
+export default function StoryThumbnail({title, creator, id}:Story){
     return <NavLink to="/">
         <div className="storythumbnail">
             <img src="/Deadly laser.jpg" alt="nothing" />
