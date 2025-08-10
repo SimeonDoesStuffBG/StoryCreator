@@ -1,6 +1,12 @@
 import { stories } from "~/placeholders";
 import type { Route } from "../+types/root";
 
+export function meta({}:Route.MetaArgs){
+    return[
+        {title:"Story"}
+    ];
+}
+
 export default function Story({params}:Route.ComponentProps){
     let story = stories.find(story=>params.id&&story.id==parseInt(params.id))
     
