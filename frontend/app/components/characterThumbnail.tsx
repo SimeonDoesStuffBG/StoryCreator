@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink } from "react-router"
 
 export default function CharacterThumbnail({name, creator, id}:Character){
-    return <NavLink to="/">
+    return <NavLink to={`/character/${id}`}>
                 <div className="charthumbnail">
                     <img src="/character.svg" alt="" className="picture"/>
                     <div className="info">
