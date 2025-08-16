@@ -116,3 +116,19 @@ body {
 }
 }
 
+header{
+  padding: 5px 10px;
+  background-color: coral;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  .login{
+    float: right;
+    background-color: crimson;
+    padding: 2px;
+    border: 1px solid tomato;
+    a:hover{
+      color: blue;
+    }
+  }
+}
