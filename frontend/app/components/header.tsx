@@ -4,8 +4,8 @@ export default function Header(){
     return <header>
        <Link to="/">Home</Link>     
        <div className="login">
-            <Link to="/">login</Link>|
-            <Link to="/">sign in</Link>
+            <Link to="/login">login</Link>|
+            <Link to="/signin">sign in</Link>
         </div>    
     </header>
 }
