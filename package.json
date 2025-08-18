@@ -7,7 +7,8 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "view":"npm run dev --prefix frontend-old"
+    "view-old":"npm run dev --prefix frontend-old",
+    "view":"npm start --prefix frontend"
   },
   "keywords": [],
   "author": "",
