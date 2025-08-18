@@ -11,3 +11,22 @@ body {
     color-scheme: dark;
   }
 }
+
+
+.lists{
+  display: flex;
+
+  .characters, .stories{
+  flex: 1;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  input {
+    position: sticky;
+    top: 0;
+    flex-basis: 100%;
+  }
+}
+}
