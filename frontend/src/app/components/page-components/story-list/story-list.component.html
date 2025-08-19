@@ -1,3 +1,4 @@
 <div class="stories">
-    <story-thumbnail *ngFor="let story of stories" [story]="story"/>
+    <input type="text" [(ngModel)]="filter" placeholder="Search stories by title">
+    <story-thumbnail *ngFor="let story of stories | filter:filterStories" [story]="story"/>
 </div>

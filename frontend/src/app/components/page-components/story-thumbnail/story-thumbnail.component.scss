@@ -11,12 +11,12 @@
     height: 180px;
   }
 
-  .title{
+  h1{
     font-size: large;
     color: black;
   }
 
-  .creator{
+  h3{
     font-size: medium;
     color: gray;
   }
@@ -26,7 +26,7 @@
   background-color: pink;
   border: 2px solid palevioletred;
   margin: 3px;
-  .title, .creator{
+  h1, h3{
     text-decoration: underline;
   }
 }
