@@ -6,5 +6,5 @@ import Character from '../../../types/character';
   styleUrl: './character-list.component.scss'
 })
 export class CharacterListComponent {
-  @Input({required:true}) chars!: Character[];
+  @Input({required:true}) characters!: Character[];
 }

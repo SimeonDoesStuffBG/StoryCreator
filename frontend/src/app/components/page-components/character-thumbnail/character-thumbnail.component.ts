@@ -8,4 +8,10 @@ import Character from '../../../types/character';
 })
 export class CharacterThumbnailComponent {
   @Input({required:true}) character!:Character;
+  get name() {
+    return this.character.name;
+  }
+  get creator(){
+    return this.character.creator;
+  }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { characters } from '../../placeholders/placeholders';
+import { characters, stories } from '../../placeholders/placeholders';
 
 @Component({
   selector: 'main-page',
@@ -8,4 +8,5 @@ import { characters } from '../../placeholders/placeholders';
 })
 export class MainPage {
   characters=characters;
+  stories=stories;
 }

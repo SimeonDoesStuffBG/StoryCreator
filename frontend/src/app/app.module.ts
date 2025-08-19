@@ -3,7 +3,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { PagesModule } from "./pages/pages.module";
-import GLobalComponentsModule from "./components/globals/globals.module";
+import GLobalComponentsModule from "./components/global-components/global-components.module";
 
 @NgModule({
     declarations:[
