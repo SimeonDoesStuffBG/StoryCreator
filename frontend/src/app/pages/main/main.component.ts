@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { characters } from '../../placeholders/placeholders';
 
 @Component({
-  selector: 'app-main',
+  selector: 'main-page',
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

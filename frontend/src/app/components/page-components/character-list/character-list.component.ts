@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Character from '../../types/character';
+import Character from '../../../types/character';
 @Component({
   selector: 'character-list',
   templateUrl: './character-list.component.html',
