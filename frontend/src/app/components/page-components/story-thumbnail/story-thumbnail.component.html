@@ -1,4 +1,4 @@
-<a routerLink="/" class="storythumbnail">
+<a [routerLink]="['story', story.id]" class="storythumbnail">
     <img src="../../assets/Deadly laser.jpg" alt="nothing" />
     <h1 className="title">{{title}}</h1>
     <h3 className="creator">{{creator}}</h3>
