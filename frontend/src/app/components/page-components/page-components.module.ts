@@ -6,6 +6,7 @@ import { CharacterListComponent } from './character-list/character-list.componen
 import { StoryListComponent } from './story-list/story-list.component';
 import { PipesModule } from '../../pipes/pipes.module';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    PipesModule
+    PipesModule,
+    RouterModule
   ],
   exports:[
     CharacterListComponent, 
