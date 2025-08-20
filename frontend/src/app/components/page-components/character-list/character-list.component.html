@@ -1,0 +1,4 @@
+<div class="characters">
+    <input type="text" placeholder="Search character by name" [(ngModel)]="filterStr">
+    <character-thumbnail *ngFor="let character of characters|filter:filterCaracters " [character]="character"/>
+</div>

@@ -1,0 +1,11 @@
+.stories{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+    input {
+    position: sticky;
+    top: 0;
+    flex-basis: 100%;
+  }
+}

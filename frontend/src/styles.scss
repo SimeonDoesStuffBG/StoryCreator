@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+  font-family: "Poppins", sans-serif;
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+input{
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+form{
+  display:grid;
+  grid-template-columns:20% auto;
+  background-color: lightblue;
+  margin: 10px 5px;
+  padding: 10px 5px;
+  float: center;
+  #submit{
+    background-color: greenyellow;
+    border: 2px solid black;
+    grid-column: 1 / span 2;
+  }
+
+  #submit:hover{
+    background-color: green;
+    padding: 3px;
+  }
+}

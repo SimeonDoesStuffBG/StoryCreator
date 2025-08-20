@@ -1,0 +1,32 @@
+.storythumbnail{
+  width:330px;
+  background-color: lavenderblush;
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+
+  img{
+    width: 320px;
+    height: 180px;
+  }
+
+  h1{
+    font-size: large;
+    color: black;
+  }
+
+  h3{
+    font-size: medium;
+    color: gray;
+  }
+}
+
+.storythumbnail:hover{
+  background-color: pink;
+  border: 2px solid palevioletred;
+  margin: 3px;
+  h1, h3{
+    text-decoration: underline;
+  }
+}
