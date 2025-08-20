@@ -4,7 +4,7 @@ import Character from '../../types/character';
 import { characters } from '../../placeholders/placeholders';
 
 @Component({
-  selector: 'app-character',
+  selector: 'character-page',
   templateUrl: './character.component.html',
   styleUrl: './character.component.scss'
 })

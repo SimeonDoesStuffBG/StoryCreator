@@ -4,7 +4,7 @@ import Story from '../../types/story';
 import { stories } from '../../placeholders/placeholders';
 
 @Component({
-  selector: 'app-story',
+  selector: 'story-page',
   templateUrl: './story.component.html',
   styleUrl: './story.component.scss'
 })
