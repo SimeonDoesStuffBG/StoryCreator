@@ -1,5 +1,0 @@
-interface Character {
-    id: number;
-    name: string;
-    creator: string;
-}
