@@ -1,7 +1,7 @@
 import Character from "../types/character";
 import Story from "../types/story";
 export const characters:Character[] = [
-    {id:"1", name:"Mark Watney", creator:"Andy Weir"}, 
+    {id:"1", name:"Mark Watney", creator:"Andy Weir", description:"Mark watney is an astronaut on Ares 3. He is left on Mars thought dead by his crewmates. Now he has to survive on mars."}, 
     {id:"2", name:"Aragorn Son of Arathorn", creator:"J.R.R Tolkien"},
     {id:"3", name:"Leto Atreides The Second The Second", creator:"Frank Herbert"}, 
     {id:"4", name:"Mr. Cavor", creator:"H.G. Wells"},
@@ -10,7 +10,7 @@ export const characters:Character[] = [
 ]
 
 export const stories:Story[] = [
-    {id:"1", title:"The Martian", creator:"Andy Weir"},
+    {id:"1", title:"The Martian", creator:"Andy Weir", description:"Astronaut Mark Watney is left stranded on Mars, believed to be dead. Now he has to survive using his poop and potatoes."},
     {id:"2", title:"Lord of The Rings", creator:"J.R.R Tolkien"},
     {id:"3", title:"God Emperor of Dune", creator:"Frank Herbert"}, 
     {id:"4", title:"The First Men In The Moon", creator:"H.G. Wells"},

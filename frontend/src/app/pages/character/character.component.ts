@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import Character from '../../types/character';
 import { characters } from '../../placeholders/placeholders';
 
@@ -12,11 +12,15 @@ export class CharacterPage {
   charId:string="";
   character?:Character;
   private activeRoute = inject(ActivatedRoute);
+  private router = inject(Router)
 
   constructor(){
     this.activeRoute.params.subscribe(params=>{
       this.charId = params['charId'];
       this.character = characters.find(char=>char.id==this.charId);
+      if(!this.character){
+        this.router.navigate(['']);
+      }
     })
   }
 }
