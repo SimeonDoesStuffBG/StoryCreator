@@ -1,4 +1,6 @@
+<checkbox name="Characters" [enabled]="showStories" [(checked)]="showCharacters"/>
+<checkbox name="Stories" [enabled]="showCharacters" [(checked)]="showStories"/>
 <div class="lists">
-  <character-list [characters]="characters"/>
-  <story-list [stories]="stories"/>
+  <character-list *ngIf="showCharacters" [characters]="characters"/>
+  <story-list *ngIf="showStories" [stories]="stories"/>
 </div>

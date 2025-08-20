@@ -7,6 +7,7 @@ import { StoryListComponent } from './story-list/story-list.component';
 import { PipesModule } from '../../pipes/pipes.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 
 
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     CharacterThumbnailComponent,
     StoryThumbnailComponent, 
     CharacterListComponent,
-    StoryListComponent
+    StoryListComponent,
+    CheckboxComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { RouterModule } from '@angular/router';
   ],
   exports:[
     CharacterListComponent, 
-    StoryListComponent
+    StoryListComponent,
+    CheckboxComponent
   ]
 })
 export class PageComponentsModule { }

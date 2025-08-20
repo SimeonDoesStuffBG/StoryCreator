@@ -9,4 +9,6 @@ import { characters, stories } from '../../placeholders/placeholders';
 export class MainPage {
   characters=characters;
   stories=stories;
+  showCharacters:boolean=true;
+  showStories:boolean=true;
 }
