@@ -16,7 +16,7 @@ export class CharacterPage {
   constructor(){
     this.activeRoute.params.subscribe(params=>{
       this.charId = params['charId'];
-      this.character = characters.find(char=>char.id==parseInt(this.charId));
+      this.character = characters.find(char=>char.id==this.charId);
     })
   }
 }

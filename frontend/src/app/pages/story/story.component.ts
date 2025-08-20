@@ -16,7 +16,7 @@ export class StoryPage {
   constructor(){
     this.activatedRoute.params.subscribe(param=>{
       this.storyId = param["storyId"];
-      this.story = stories.find(story=>story.id==parseInt(this.storyId));
+      this.story = stories.find(story=>story.id==this.storyId);
     })
   }
 }

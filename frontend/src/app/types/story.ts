@@ -1,5 +1,5 @@
 export default interface Story{
-    id: number;
+    id: string;
     title:string;
     creator:string;
 }
