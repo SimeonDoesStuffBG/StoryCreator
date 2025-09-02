@@ -1,0 +1,11 @@
+<form action="">
+    <label for="name">Character name:</label><input type="text" name="characterName" id="name"/>
+    <label for="description">Character description:</label><textarea name="characterDesc" id="description"></textarea>
+    <label for="stars">Character stars in:</label>
+    <select id="stars">
+        <option *ngFor="let story of stories" [value]="story.id">{{story.title}}</option>
+    </select>
+
+    <label for="alias">Character aliases:</label><input type="text" name="characterName" id="alias"/>
+    <input type="submit" value="Create character" id="submit">
+</form>

@@ -7,6 +7,7 @@ import { StoryPage } from './story/story.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { LogInPage } from './log-in/log-in.component';
 import { SignInPage } from './sign-in/sign-in.component';
+import { CharacterCreatePage } from './character-create/character-create.component';
 
 
 
@@ -16,7 +17,8 @@ import { SignInPage } from './sign-in/sign-in.component';
     CharacterPage, 
     StoryPage, 
     LogInPage, 
-    SignInPage
+    SignInPage,
+    CharacterCreatePage
   ],
   imports: [
     CommonModule,

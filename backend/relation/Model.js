@@ -11,21 +11,16 @@ const relationModel = mongoose.Schema({
     required: true,
     ref: "Character",
   },
-  start: {
-    type: mongoose.Schema.Types.ObjectId,
-    required: true,
-    ref: "Plotpoint",
-  },
-  end: {
-    type: mongoose.Schema.Types.ObjectId,
-    required: false,
-    ref: "Plotpoint",
-  },
   relationType: {
     type: Number,
     default: 0,
   },
 });
+
+relationModel.index(
+  { characterOne: 1, characterTwo: 1, relationType: 1 },
+  { unique: true }
+);
 
 //relation types
 //0 - friends
