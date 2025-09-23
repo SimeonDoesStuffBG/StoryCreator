@@ -8,6 +8,9 @@ import { AppRoutingModule } from '../app-routing.module';
 import { LogInPage } from './log-in/log-in.component';
 import { SignInPage } from './sign-in/sign-in.component';
 import { CharacterCreatePage } from './character-create/character-create.component';
+import InfoChipComponent from "../components/global-components/global-components.module";
+import GLobalComponentsModule from '../components/global-components/global-components.module';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 
@@ -23,7 +26,8 @@ import { CharacterCreatePage } from './character-create/character-create.compone
   imports: [
     CommonModule,
     PageComponentsModule,
-    AppRoutingModule
-  ]
+    AppRoutingModule,
+    PipesModule
+]
 })
 export class PagesModule { }

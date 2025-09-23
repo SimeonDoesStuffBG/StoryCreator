@@ -8,6 +8,7 @@ import { PipesModule } from '../../pipes/pipes.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { InfoChipComponent } from './info-chips/info-chips.component';
 
 
 
@@ -17,7 +18,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     StoryThumbnailComponent, 
     CharacterListComponent,
     StoryListComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    InfoChipComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
   exports:[
     CharacterListComponent, 
     StoryListComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    InfoChipComponent
   ]
 })
 export class PageComponentsModule { }

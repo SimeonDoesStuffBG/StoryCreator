@@ -6,7 +6,7 @@ import { containsFilter } from "../helpers/filter";
     pure:false
 })
 export class FilterPipe implements PipeTransform{
-    transform(array:any[], filter:(item:any)=>boolean){
+    transform<T>(array:T[], filter:(item:T)=>boolean){
         return array.filter(item=>filter(item));
     }
 }

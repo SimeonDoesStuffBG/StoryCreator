@@ -3,9 +3,11 @@
     <label for="description">Character description:</label><textarea name="characterDesc" id="description"></textarea>
     <label for="stars">Character stars in:</label>
     <select id="stars">
-        <option *ngFor="let story of stories" [value]="story.id">{{story.title}}</option>
+        <option *ngFor="let story of stories|filter:isStoryNotSelected">{{story.title}}</option>
     </select>
-
+    <section class="selected-stories" *ngIf="selectedStories.length>0">
+        <info-chip *ngFor="let story of selectedStories" [text]="story.title" (chpDelete)="removeStory(story)"/>
+    </section>
     <label for="alias">Character aliases:</label><input type="text" name="characterName" id="alias"/>
     <input type="submit" value="Create character" id="submit">
 </form>
