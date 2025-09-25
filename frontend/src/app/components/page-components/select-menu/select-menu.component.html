@@ -1,0 +1,7 @@
+<section class="dropdown">
+    <div (click)="toggle()" class="dropbtn">{{name}}</div>
+    <div class="content hide" id="content">
+        <input type="text" placeholder="Filter..." id="filter" [(ngModel)]="filterStr">
+        <div *ngFor="let item of items|filter:filterItems" (click)="onSelectItem(item.value)">{{item.name}}</div>
+    </div>
+</section>

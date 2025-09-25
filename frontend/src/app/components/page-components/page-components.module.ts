@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { InfoChipComponent } from './info-chips/info-chips.component';
+import { SelectMenuComponent } from './select-menu/select-menu.component';
 
 
 
@@ -19,7 +20,8 @@ import { InfoChipComponent } from './info-chips/info-chips.component';
     CharacterListComponent,
     StoryListComponent,
     CheckboxComponent,
-    InfoChipComponent
+    InfoChipComponent,
+    SelectMenuComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { InfoChipComponent } from './info-chips/info-chips.component';
     CharacterListComponent, 
     StoryListComponent,
     CheckboxComponent,
-    InfoChipComponent
+    InfoChipComponent,
+    SelectMenuComponent
   ]
 })
 export class PageComponentsModule { }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { stories } from '../../placeholders/placeholders';
 import Story from '../../types/story';
+import { SelectMenuItem } from '../../types/select-menu-item';
 
 @Component({
   selector: 'character-create-page',
@@ -9,13 +10,13 @@ import Story from '../../types/story';
 })
 export class CharacterCreatePage {
   stories:Story[] = stories;
-  selectedStories:Story[] = [{id:"2", title:"Lord of The Rings", creator:"J.R.R Tolkien"},
-    {id:"3", title:"God Emperor of Dune", creator:"Frank Herbert"}, 
-    {id:"4", title:"The First Men In The Moon", creator:"H.G. Wells"},]
+  selectedStories:Story[] = []
 
-  addStory:(event:Event)=>void = (event)=>{
-    console.log(event.target)
-    //this.selectedStories.push(story)
+  addStory:(id:string)=>void = (id)=>{
+    let storySel:Story|undefined = this.stories.find(story=>story.id===id);
+    console.log(storySel);
+    if(storySel)
+      this.selectedStories.push(storySel)
   }
 
   removeStory:(story:Story)=>void = (story)=>{
@@ -24,5 +25,9 @@ export class CharacterCreatePage {
 
   isStoryNotSelected = (story:Story)=>{
     return this.selectedStories.filter(s=>s.id===story.id).length==0;
+  }
+
+  storyToItem = (story:Story)=>{
+    return {name:story.title, value:story.id} satisfies SelectMenuItem
   }
 }

@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { containsFilter } from "../helpers/filter";
 
 @Pipe({
     name: "filter",
